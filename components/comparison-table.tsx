@@ -1,5 +1,5 @@
-import { Check, X } from "lucide-react"
-import Image from "next/image"
+import { Check, X } from "lucide-react";
+import Image from "next/image";
 
 export default function ComparisonTable() {
   const features = [
@@ -7,11 +7,23 @@ export default function ComparisonTable() {
     { name: "AES 256-bit encryption", competitors: [true, true, true, true] },
     { name: "Kill switch", competitors: [true, true, true, true] },
     { name: "DNS & IP leak protection", competitors: [true, true, true, true] },
-    { name: "Ultra-fast & secure Rust architecture", competitors: [true, false, false, false] },
-    { name: "Free data scanner tool", competitors: [true, false, false, false] },
-    { name: "Free premium password manager", competitors: [true, true, false, false] },
-    { name: "Free eSIM data included", competitors: [true, false, false, false] },
-  ]
+    {
+      name: "Ultra-fast & secure Rust architecture",
+      competitors: [true, false, false, false],
+    },
+    {
+      name: "Free data scanner tool",
+      competitors: [true, false, false, false],
+    },
+    {
+      name: "Free premium password manager",
+      competitors: [true, true, false, false],
+    },
+    {
+      name: "Free eSIM data included",
+      competitors: [true, false, false, false],
+    },
+  ];
 
   return (
     <div className="w-full overflow-auto">
@@ -21,14 +33,20 @@ export default function ComparisonTable() {
             <th className="p-4 text-left"></th>
             <th className="p-4 text-center bg-primary/5 border-t border-l border-r border-border">
               <div className="flex flex-col items-center justify-center">
-                <Image src="/novix-logo.png" alt="Novix VPN Logo" width={32} height={32} className="mb-2 rounded-md" />
+                <Image
+                  src="/novix-vpn.png"
+                  alt="Novix VPN Logo"
+                  width={32}
+                  height={32}
+                  className="mb-2 rounded-md"
+                />
                 <span className="font-bold">Novix VPN</span>
               </div>
             </th>
             <th className="p-4 text-center">
               <div className="flex flex-col items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=32&width=32"
+                  src="/nord-vpn.png"
                   width={32}
                   height={32}
                   alt="NordVPN"
@@ -40,7 +58,7 @@ export default function ComparisonTable() {
             <th className="p-4 text-center">
               <div className="flex flex-col items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=32&width=32"
+                  src="/Private-vpn.png"
                   width={32}
                   height={32}
                   alt="PrivateVPN"
@@ -52,7 +70,7 @@ export default function ComparisonTable() {
             <th className="p-4 text-center">
               <div className="flex flex-col items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=32&width=32"
+                  src="/protonvpn.png"
                   width={32}
                   height={32}
                   alt="ProtonVPN"
@@ -83,12 +101,13 @@ export default function ComparisonTable() {
           ))}
           <tr className="bg-primary/5">
             <td colSpan={5} className="p-4 text-center font-bold">
-              <span>Novix VPN offers the most comprehensive protection and features</span>
+              <span>
+                Novix VPN offers the most comprehensive protection and features
+              </span>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-  )
+  );
 }
-

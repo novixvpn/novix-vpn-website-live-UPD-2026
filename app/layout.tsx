@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import { PostHogProvider } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,17 +22,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <PostHogProvider>
-          {children}
-          {/* HubSpot Embed Code */}
-          <Script
-            type="text/javascript"
-            id="hs-script-loader"
-            async
-            defer
-            src="//js.hs-scripts.com/242560734.js"
-          />
-        </PostHogProvider>
+        {children}
+        {/* HubSpot Embed Code */}
+        <Script
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src="//js.hs-scripts.com/242560734.js"
+        />
       </body>
     </html>
   );

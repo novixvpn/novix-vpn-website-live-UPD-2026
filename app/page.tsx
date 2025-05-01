@@ -290,6 +290,7 @@ export default function Home() {
                 <PricingCards interval="yearly" />
               </TabsContent>
             </Tabs>
+            ew
           </div>
         </section>
 
