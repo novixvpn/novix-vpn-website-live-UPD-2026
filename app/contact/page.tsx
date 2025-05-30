@@ -114,7 +114,7 @@ export default function Contact() {
                         For general inquiries:
                       </p>
                       <a
-                        href="mailto:novixvpna@gmail.com"
+                        href="mailto:novixvpn@gmail.com"
                         className="text-primary hover:underline"
                       >
                         novixvpn@gmail.com
@@ -123,7 +123,7 @@ export default function Contact() {
                         For technical support:
                       </p>
                       <a
-                        href="mailto:support@novixvpn.com"
+                        href="mailto:novixvpn@gmail.com"
                         className="text-primary hover:underline"
                       >
                         novixvpn@gmail.com
