@@ -18,34 +18,6 @@ import Footer from "@/components/footer";
 export default function WhatIsVPN() {
   return (
     <div className="flex min-h-screen flex-col">
-      {/* Header */}
-      <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between py-4">
-          <div className="flex items-center gap-2">
-            <Link href="/">
-              <div className="flex items-center gap-2">
-                <Image
-                  src="/novix-logo.png"
-                  alt="Novix VPN Logo"
-                  width={180}
-                  height={58}
-                  className="rounded-md"
-                  draggable="false"
-                />
-              </div>
-            </Link>
-          </div>
-          <div className="flex items-center gap-4">
-            <Button asChild variant="ghost">
-              <Link href="/">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Home
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </header>
-
       <main className="flex-1">
         <section className="bg-gradient-to-b from-primary to-primary/80 text-white py-16 md:py-24">
           <div className="container px-4 md:px-6">
@@ -89,7 +61,7 @@ export default function WhatIsVPN() {
               </div>
               <div className="relative rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/VPN-Explained-Simply.webp"
                   alt="VPN Tunnel Illustration"
                   width={600}
                   height={400}
@@ -236,90 +208,6 @@ export default function WhatIsVPN() {
           </div>
         </section>
 
-        <section className="bg-muted py-12 md:py-24">
-          <div className="container px-4 md:px-6">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">
-                Common VPN Use Cases
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                How people around the world use VPNs in their daily lives.
-              </p>
-            </div>
-
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Secure Remote Work</h3>
-                  <p className="text-muted-foreground">
-                    Remote workers use VPNs to securely access company resources
-                    and protect sensitive business data when working from home
-                    or public places.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Streaming Content</h3>
-                  <p className="text-muted-foreground">
-                    Access your favorite streaming services and content
-                    libraries from around the world, regardless of your physical
-                    location.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">
-                    Secure Online Banking
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Protect your financial information when accessing online
-                    banking services, especially when using public Wi-Fi
-                    networks.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">
-                    Safe Online Shopping
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Keep your payment details and personal information secure
-                    when shopping online, preventing data theft and fraud.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Travel Security</h3>
-                  <p className="text-muted-foreground">
-                    Travelers use VPNs to maintain access to their home
-                    country's services and protect their data when using
-                    unfamiliar networks abroad.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Privacy Protection</h3>
-                  <p className="text-muted-foreground">
-                    Many people use VPNs simply to maintain their privacy online
-                    and prevent tracking by advertisers, websites, and other
-                    third parties.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
         <section className="py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center mb-12">
@@ -357,7 +245,8 @@ export default function WhatIsVPN() {
                   <div>
                     <h4 className="font-medium">Global Server Network</h4>
                     <p className="text-sm text-muted-foreground">
-                      Servers in 90+ countries for unrestricted access.
+                      Servers available worldwide for unrestricted global
+                      access.
                     </p>
                   </div>
                 </div>
@@ -383,8 +272,6 @@ export default function WhatIsVPN() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }

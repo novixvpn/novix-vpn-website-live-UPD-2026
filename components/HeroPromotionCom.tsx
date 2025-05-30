@@ -36,10 +36,10 @@ export default function HeroPromotionCom() {
           </div>
         </div>
         <div>
-          <h2 className="text-[1.375rem] text-gray-800">
-            Offer: 70% off,
-            <span className="font-semibold ml-1">Get free trial</span>
+          <h2 className="text-lg ">
+            <strong>Limited-Time Offer:</strong> Save <strong>70% off</strong>
           </h2>
+          <h3 className="font-bold"> + Claim VIP Days</h3>
         </div>
       </div>
     </>

@@ -10,34 +10,6 @@ import Footer from "@/components/footer";
 export default function VPNServers() {
   return (
     <div className="flex min-h-screen flex-col">
-      {/* Header */}
-      <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between py-4">
-          <div className="flex items-center gap-2">
-            <Link href="/">
-              <div className="flex items-center gap-2">
-                <Image
-                  src="/novix-logo.png"
-                  alt="Novix VPN Logo"
-                  width={180}
-                  height={58}
-                  className="rounded-md"
-                  draggable="false"
-                />
-              </div>
-            </Link>
-          </div>
-          <div className="flex items-center gap-4">
-            <Button asChild variant="ghost">
-              <Link href="/">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Home
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </header>
-
       <main className="flex-1">
         <section className="bg-gradient-to-b from-primary to-primary/80 text-white py-16 md:py-24">
           <div className="container px-4 md:px-6">
@@ -339,7 +311,7 @@ export default function VPNServers() {
         <section className="bg-muted py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="grid gap-12 md:grid-cols-2 items-center">
-              <div>
+              <div className="md:-mt-10">
                 <h2 className="text-3xl font-bold mb-6">Server Features</h2>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
@@ -387,7 +359,7 @@ export default function VPNServers() {
               </div>
               <div className="relative rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/server-features.png"
                   alt="Server Network Map"
                   width={600}
                   height={400}
@@ -418,8 +390,6 @@ export default function VPNServers() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }

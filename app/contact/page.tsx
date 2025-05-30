@@ -1,11 +1,8 @@
 "use client";
 
 import type React from "react";
-
 import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { ArrowLeft, Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Send } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -41,55 +38,47 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    toast({
-      title: "Message Sent",
-      description:
-        "Thank you for contacting us. We'll get back to you shortly.",
-    });
-
-    setFormData({
-      name: "",
-      email: "",
-      subject: "General Inquiry",
-      message: "",
-    });
-
-    setIsSubmitting(false);
+      const data = await res.json();
+      if (res.ok) {
+        toast({
+          title: "Message Sent",
+          description:
+            "Thank you for contacting us. We'll get back to you shortly.",
+        });
+        setFormData({
+          name: "",
+          email: "",
+          subject: "General Inquiry",
+          message: "",
+        });
+      } else {
+        toast({
+          title: "Failed to send message",
+          description: data?.error || "Please try again later.",
+        });
+      }
+    } catch (err) {
+      console.error(err);
+      toast({
+        title: "Something went wrong",
+        description: "Please check your connection and try again.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <div className="flex min-h-screen flex-col">
-      {/* Header */}
-      <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between py-4">
-          <div className="flex items-center gap-2">
-            <Link href="/">
-              <div className="flex items-center gap-2">
-                <Image
-                  src="/novix-logo.png"
-                  alt="Novix VPN Logo"
-                  width={180}
-                  height={58}
-                  className="rounded-md"
-                  draggable="false"
-                />
-              </div>
-            </Link>
-          </div>
-          <div className="flex items-center gap-4">
-            <Button asChild variant="ghost">
-              <Link href="/">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Home
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </header>
-
       <main className="flex-1">
         <section className="bg-gradient-to-b from-primary to-primary/80 text-white py-16 md:py-24">
           <div className="container px-4 md:px-6">
@@ -128,7 +117,7 @@ export default function Contact() {
                         href="mailto:novixvpna@gmail.com"
                         className="text-primary hover:underline"
                       >
-                        novixvpna@gmail.com
+                        novixvpn@gmail.com
                       </a>
                       <p className="text-muted-foreground mt-2 mb-1">
                         For technical support:
@@ -137,47 +126,8 @@ export default function Contact() {
                         href="mailto:support@novixvpn.com"
                         className="text-primary hover:underline"
                       >
-                        support@novixvpn.com
+                        novixvpn@gmail.com
                       </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="rounded-full bg-primary/10 p-3 mt-1">
-                      <Phone className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold mb-1">Call Us</h3>
-                      <p className="text-muted-foreground mb-1">
-                        Customer Support:
-                      </p>
-                      <a
-                        href="tel:+18005551234"
-                        className="text-primary hover:underline"
-                      >
-                        +1 (800) 555-1234
-                      </a>
-                      <p className="text-muted-foreground mt-2 mb-1">
-                        Hours of Operation:
-                      </p>
-                      <p>Monday - Friday: 9am - 8pm EST</p>
-                      <p>Saturday - Sunday: 10am - 6pm EST</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="rounded-full bg-primary/10 p-3 mt-1">
-                      <MapPin className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold mb-1">Our Address</h3>
-                      <p className="text-muted-foreground">
-                        123 Privacy Street
-                      </p>
-                      <p className="text-muted-foreground">
-                        Secure City, 10001
-                      </p>
-                      <p className="text-muted-foreground">United States</p>
                     </div>
                   </div>
                 </div>
@@ -222,34 +172,20 @@ export default function Contact() {
                           onValueChange={handleSubjectChange}
                           className="flex flex-col space-y-1"
                         >
-                          <div className="flex items-center space-x-2">
-                            <RadioGroupItem
-                              value="General Inquiry"
-                              id="general"
-                            />
-                            <Label htmlFor="general">General Inquiry</Label>
-                          </div>
-                          <div className="flex items-center space-x-2">
-                            <RadioGroupItem
-                              value="Technical Support"
-                              id="support"
-                            />
-                            <Label htmlFor="support">Technical Support</Label>
-                          </div>
-                          <div className="flex items-center space-x-2">
-                            <RadioGroupItem
-                              value="Billing Question"
-                              id="billing"
-                            />
-                            <Label htmlFor="billing">Billing Question</Label>
-                          </div>
-                          <div className="flex items-center space-x-2">
-                            <RadioGroupItem
-                              value="Feature Request"
-                              id="feature"
-                            />
-                            <Label htmlFor="feature">Feature Request</Label>
-                          </div>
+                          {[
+                            "General Inquiry",
+                            "Technical Support",
+                            "Billing Question",
+                            "Feature Request",
+                          ].map((label) => (
+                            <div
+                              key={label}
+                              className="flex items-center space-x-2"
+                            >
+                              <RadioGroupItem value={label} id={label} />
+                              <Label htmlFor={label}>{label}</Label>
+                            </div>
+                          ))}
                         </RadioGroup>
                       </div>
 
@@ -309,81 +245,7 @@ export default function Contact() {
             </div>
           </div>
         </section>
-
-        <section className="bg-muted py-12 md:py-24">
-          <div className="container px-4 md:px-6">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Find quick answers to common questions.
-              </p>
-
-              <div className="grid gap-6 md:grid-cols-2">
-                <Card>
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-2">
-                      How do I reset my password?
-                    </h3>
-                    <p className="text-muted-foreground">
-                      You can reset your password by clicking the "Forgot
-                      Password" link on the login page. We'll send you an email
-                      with instructions.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-2">
-                      How do I cancel my subscription?
-                    </h3>
-                    <p className="text-muted-foreground">
-                      You can cancel your subscription at any time from your
-                      account dashboard under "Subscription Settings."
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-2">
-                      Can I use Novix VPN on multiple devices?
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Yes, depending on your plan, you can use Novix VPN on up
-                      to 8 devices simultaneously with a single subscription.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-2">
-                      How do I get a refund?
-                    </h3>
-                    <p className="text-muted-foreground">
-                      We offer a 30-day money-back guarantee. Contact our
-                      support team to request a refund within 30 days of your
-                      purchase.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <div className="mt-8">
-                <p className="text-muted-foreground mb-4">
-                  Still have questions? Check out our comprehensive help center.
-                </p>
-                <Button>Visit Help Center</Button>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
-
-      <Footer />
     </div>
   );
 }
