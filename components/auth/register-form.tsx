@@ -362,14 +362,14 @@ export default function RegisterForm() {
             <label htmlFor="agreeToTerms" className="font-medium text-gray-700">
               I agree to the{" "}
               <Link
-                href="/terms"
+                href="/terms-of-service"
                 className="text-primary hover:text-primary-600"
               >
                 Terms of Service
               </Link>{" "}
               and{" "}
               <Link
-                href="/privacy"
+                href="/privacy-policy"
                 className="text-primary hover:text-primary-600"
               >
                 Privacy Policy

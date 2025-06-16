@@ -64,7 +64,7 @@ export default function VPNDownloadPage() {
 
             <div className="flex items-center gap-2 text-gray-600">
               <Clock className="h-4 w-4" />
-              <span className="text-sm">30-day money-back guarantee</span>
+              <span className="text-sm">48 hours money-back guarantee</span>
             </div>
           </div>
 

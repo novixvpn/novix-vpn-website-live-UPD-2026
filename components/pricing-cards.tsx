@@ -16,56 +16,61 @@ interface PricingCardsProps {}
 export default function PricingCards({}: PricingCardsProps) {
   const plans = [
     {
-      name: "Weekly",
+      name: "Weekly Plan",
+      originalPrice: "$5.99",
+      price: "$1.79 / week",
       description: "Essential protection for individuals",
-      price: 11.99,
       features: [
         "Connect 5 devices simultaneously",
-        "Access to 60+ countries",
         "No-logs policy",
         "24/7 customer support",
-      ],
-      popular: false,
-    },
-    {
-      name: "Yearly",
-      description: "Complete protection for your digital life",
-      price: 19.99,
-      features: [
-        "Connect 5 devices simultaneously",
-        "Access to 100+ countries",
-        "No-logs policy",
-        "24/7 customer support",
-        "Ad & malware blocker",
-        "Split tunneling",
-        "Dedicated IP address",
-        "Password manager included",
+        "Ad & Malware Blocker",
+        "Free Kill Switch",
+        "48-hour money-back guarantee",
       ],
       popular: true,
     },
     {
-      name: "Monthly",
-      description: "Advanced security for all your devices",
-      price: 14.99,
+      name: "Yearly Plan",
+      originalPrice: "$160.00",
+      price: "$48.00 / year",
+      monthlyEquivalent: "~$4.00/month",
+      description: "Complete protection for your digital life. Save 70%",
       features: [
         "Connect 5 devices simultaneously",
-        "Access to 90+ countries",
+        "No-logs policy",
+        "Free Kill Switch",
+        "24/7 customer support",
+        "Ad & Malware Blocker",
+        // "3-Day-Claim Extra Bonus",
+        "48-hour money-back guarantee",
+      ],
+      popular: true,
+    },
+    {
+      name: "Monthly Plan",
+      originalPrice: "$17.99",
+      price: "$5.39 / month",
+      description: "Complete protection for your digital life",
+      features: [
+        "Connect 5 devices simultaneously",
         "No-logs policy",
         "24/7 customer support",
-        "Ad & malware blocker",
-        "Split tunneling",
+        "Ad & Malware Blocker",
+        "Free Kill Switch",
+        "48-hour money-back guarantee",
       ],
-      popular: false,
+      popular: true,
     },
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-6 max-w-fit mx-auto">
+    <div className="grid  grid-cols-1 md:grid-cols-3 justify-items-center gap-6 max-w-fit mx-auto">
       {plans.map((plan) => (
         <Card
           key={plan.name}
           className={`flex flex-col max-w-[22rem] ${
-            plan.popular ? "border-primary shadow-lg" : ""
+            plan.popular ? "border-primary shadow-xl" : ""
           }`}
         >
           {plan.popular && (
@@ -76,7 +81,14 @@ export default function PricingCards({}: PricingCardsProps) {
           <CardHeader>
             <div className="flex justify-between items-start">
               <div>
-                <CardTitle>{plan.name}</CardTitle>
+                {/* <CardTitle>{plan.name}</CardTitle> */}
+                <CardTitle>
+                  {plan.name.includes("Monthly") || plan.name.includes("Weekly")
+                    ? "🔵 "
+                    : ""}
+                  {plan.name}
+                </CardTitle>
+
                 <CardDescription className="mt-1">
                   {plan.description}
                 </CardDescription>
@@ -87,10 +99,20 @@ export default function PricingCards({}: PricingCardsProps) {
             </div>
           </CardHeader>
           <CardContent className="flex-1">
-            <div className="mb-4">
-              <span className="text-4xl font-bold">{plan.price}</span>
-              <span className="text-muted-foreground">/mo</span>
+            <div className="mb-4 space-y-1">
+              {plan.originalPrice && (
+                <div className="line-through text-muted-foreground text-sm">
+                  {plan.originalPrice}
+                </div>
+              )}
+              <div className="text-xl font-semibold">{plan.price}</div>
+              {plan.monthlyEquivalent && (
+                <div className="text-sm text-muted-foreground">
+                  {plan.monthlyEquivalent}
+                </div>
+              )}
             </div>
+
             <ul className="space-y-2 mb-6">
               {plan.features.map((feature) => (
                 <li key={feature} className="flex items-center gap-2">

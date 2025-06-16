@@ -85,7 +85,7 @@ export default function MainNav() {
                 <Link href="/vpn-servers" className="nav-link">
                   <div className="text-sm font-medium">VPN Servers</div>
                   <p className="text-sm text-muted-foreground">
-                    Our global network of high-speed servers in 90+ countries.
+                    Servers available worldwide for unrestricted global access.
                   </p>
                 </Link>
               </li>
@@ -95,8 +95,18 @@ export default function MainNav() {
                     Money-Back Guarantee
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Try Novix VPN risk-free with our 30-day money-back
+                    Try Novix VPN risk-free with our 48 hours money-back
                     guarantee.
+                  </p>
+                </Link>
+              </li>
+              <li className="hover:bg-accent p-2 hover:scale-105 transition-all ease-in-out duration-100 rounded">
+                <Link href="/how-to-delete-account" className="nav-link">
+                  <div className="text-sm font-medium">
+                    How To Delete My Novix Vpn Account
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Follow these steps to delete your Novix VPN account.
                   </p>
                 </Link>
               </li>

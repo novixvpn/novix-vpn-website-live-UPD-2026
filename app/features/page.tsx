@@ -10,11 +10,12 @@ import {
   Server,
   Eye,
   Clock,
+  Ban,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import Footer from "@/components/footer";
 
 // Metadata for the page
@@ -78,7 +79,7 @@ export default function Features() {
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Shield className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <Lock className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
                           <h1 className="font-bold">Kill Switch</h1>
                           <p className="text-muted-foreground">
@@ -88,7 +89,7 @@ export default function Features() {
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Shield className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <Server className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
                           <h1 className="font-bold">DNS Leak Protection</h1>
                           <p className="text-muted-foreground">
@@ -142,7 +143,7 @@ export default function Features() {
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Zap className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <Globe className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
                           <h1 className="font-bold">Unlimited Bandwidth</h1>
                           <p className="text-muted-foreground">
@@ -152,7 +153,7 @@ export default function Features() {
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Zap className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <Clock className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
                           <h1 className="font-bold">Smart Connect</h1>
                           <p className="text-muted-foreground">
@@ -192,7 +193,7 @@ export default function Features() {
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Smartphone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <Globe className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
                           <h1 className="font-bold">Connect Up to 5 Devices</h1>
                           <p className="text-muted-foreground">
@@ -202,7 +203,7 @@ export default function Features() {
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Smartphone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <Zap className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
                           <h1 className="font-bold">One-Click Connect</h1>
                           <p className="text-muted-foreground">
@@ -246,7 +247,7 @@ export default function Features() {
                     </p>
                     <ul className="space-y-4">
                       <li className="flex items-start gap-3">
-                        <Eye className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <Lock className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
                           <h1 className="font-bold">Strict No-Logs Policy</h1>
                           <p className="text-muted-foreground">
@@ -266,7 +267,7 @@ export default function Features() {
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Eye className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <Shield className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
                           <h1 className="font-bold">Camouflage Mode</h1>
                           <p className="text-muted-foreground">
@@ -286,7 +287,69 @@ export default function Features() {
 
         <section className="py-12 md:py-24">
           <div className="container px-4 md:px-6">
-            <div className="max-w-3xl mx-auto text-center mb-12">
+            <div className="w-full text-center mb-12">
+              <Card className="w-full bg-gradient-to-br from-primary/10 to-primary/5 shadow-lg border-none mb-12">
+                <CardContent className="pt-8 pb-10 px-6 sm:px-8 md:px-12">
+                  <div className="max-w-2xl mx-auto">
+                    <div className="flex justify-center mb-6">
+                      <div className="p-3 bg-primary/10 rounded-full">
+                        <Ban className="h-12 w-12 text-primary" />
+                      </div>
+                    </div>
+                    <h3 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900">
+                      100% Ads Free Experience
+                    </h3>
+                    <p className="text-lg sm:text-xl text-muted-foreground mb-8 leading-relaxed">
+                      Enjoy a clean, distraction-free experience with NovixVPN.
+                      Our app contains zero advertisements, pop-ups, or
+                      promotional content, giving you uninterrupted access to
+                      your privacy protection without any annoying
+                      interruptions.
+                    </p>
+                    <ul className="space-y-6 text-left max-w-xl mx-auto">
+                      <li className="flex items-start gap-4 hover:bg-gray-50 p-3 rounded-lg transition-colors duration-200">
+                        <Ban className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="text-lg font-semibold text-gray-900">
+                            Zero In-App Advertisements
+                          </h4>
+                          <p className="text-base text-muted-foreground">
+                            No banner ads, pop-ups, or video advertisements
+                            within the app interface - just pure, clean
+                            functionality focused on your privacy.
+                          </p>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-4 hover:bg-gray-50 p-3 rounded-lg transition-colors duration-200">
+                        <Shield className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="text-lg font-semibold text-gray-900">
+                            No Promotional Interruptions
+                          </h4>
+                          <p className="text-base text-muted-foreground">
+                            Browse through settings, connect to servers, and
+                            manage your account without being bombarded by
+                            third-party advertisements or sponsored content.
+                          </p>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-4 hover:bg-gray-50 p-3 rounded-lg transition-colors duration-200">
+                        <Eye className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="text-lg font-semibold text-gray-900">
+                            Distraction-Free Interface
+                          </h4>
+                          <p className="text-base text-muted-foreground">
+                            Focus entirely on your security and privacy needs
+                            with a streamlined app experience that prioritizes
+                            functionality over ad revenue.
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </CardContent>
+              </Card>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
                 Ready to Experience Novix VPN?
               </h2>
@@ -298,7 +361,7 @@ export default function Features() {
                 Get Started Today
               </Button>
               <p className="mt-4 text-sm text-muted-foreground">
-                30-day money-back guarantee. No questions asked.
+                48-hours money-back guarantee. No questions asked.
               </p>
             </div>
           </div>

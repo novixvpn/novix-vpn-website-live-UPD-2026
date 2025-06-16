@@ -7,7 +7,14 @@ import { usePathname } from "next/navigation";
 export default function CountdownTimerClient() {
   const [visible, setVisible] = useState(false);
   const pathname = usePathname();
-  const restrictedPaths = ["/login", "/register", "/forgot-password"];
+  const restrictedPaths = [
+    "/login",
+    "/register",
+    "/forgot-password",
+    "/privacy-policy",
+    "/terms-of-service",
+    "/cookie-policy",
+  ];
 
   useEffect(() => {
     if (pathname && restrictedPaths.includes(pathname)) {

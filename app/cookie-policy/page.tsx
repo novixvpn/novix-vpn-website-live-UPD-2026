@@ -9,7 +9,7 @@ export default function CookiePolicy() {
 
           <div className="prose prose-blue max-w-none">
             <p className="text-muted-foreground mb-6">
-              Last updated: May 7, 2025
+              Last updated: May 31, 2025 
             </p>
 
             <section className="mb-8">
@@ -91,13 +91,21 @@ export default function CookiePolicy() {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
-              <p>
-                <strong>Our office address:</strong> Dhaka, Bangladesh
+              <h2 className="text-2xl  font-semibold mb-4">Contact Us</h2>
+              <p className="text-gray-400 text-sm">
+                <strong>Company:</strong> CYBERLOOM IT TECHNOLOGIES
                 <br />
-                <strong>Email:</strong> support@novixvpn.com
+                <strong>Address:</strong> Plot-33, Main Road, Section-10,
+                Senpara Parbata Mirpur - 1216 Bangladesh (BD)
                 <br />
-                <strong>Company:</strong> Novix VPN
+                <strong>Email:</strong>{" "}
+                <a
+                  href="mailto:novixvpn@gmail.com"
+                  className="text-primary hover:underline"
+                >
+                  novixvpn@gmail.com
+                </a>
+                <br />
               </p>
             </section>
           </div>

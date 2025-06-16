@@ -15,6 +15,8 @@ export default function HeaderCom() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const [featuresDropdownOpen, setFeaturesDropdownOpen] = useState(false);
+
   const pathname = usePathname();
 
   useEffect(() => {
@@ -125,7 +127,7 @@ export default function HeaderCom() {
                 </div>
               )}
             </div>
-            {!token && (
+            {/* {!token && (
               <Link
                 href="/login"
                 className="flex items-center justify-between py-3 border-b border-gray-100"
@@ -133,7 +135,7 @@ export default function HeaderCom() {
               >
                 <span className="text-sm">Log In</span>
               </Link>
-            )}
+            )} */}
             {/* Get Novix Button */}
             <Link href="/download">
               <Button className="rounded-full">Get Novix VPN</Button>
@@ -186,14 +188,47 @@ export default function HeaderCom() {
                 </Link>
 
                 {/* Features */}
-                <Link
+                {/* <Link
                   href="/features"
                   className="flex items-center justify-between py-3 border-b border-gray-100"
                   onClick={() => setMobileNavOpen(false)}
                 >
                   <span className="text-lg font-medium">Features</span>
                   <ChevronDown size={16} className="text-gray-500" />
-                </Link>
+                </Link> */}
+
+                {/* Features with dropdown */}
+                <div>
+                  <button
+                    className="w-full flex items-center justify-between py-3 border-b border-gray-100"
+                    onClick={() => setFeaturesDropdownOpen((prev) => !prev)}
+                  >
+                    <span className="text-lg font-medium">Features</span>
+                    {featuresDropdownOpen ? (
+                      <ChevronUp size={16} className="text-gray-500" />
+                    ) : (
+                      <ChevronDown size={16} className="text-gray-500" />
+                    )}
+                  </button>
+                  {featuresDropdownOpen && (
+                    <div className="pl-4 pb-2 space-y-2">
+                      <Link
+                        href="/how-to-delete-account"
+                        onClick={() => setMobileNavOpen(false)}
+                        className="block text-base text-muted-foreground hover:text-primary"
+                      >
+                        How To Delete My Novix Vpn Account
+                      </Link>
+                      {/* <Link
+                        href="/features/feature-2"
+                        onClick={() => setMobileNavOpen(false)}
+                        className="block text-base text-muted-foreground hover:text-primary"
+                      >
+                        Feature 2
+                      </Link> */}
+                    </div>
+                  )}
+                </div>
 
                 {/* Download VPN */}
                 <Link
@@ -253,7 +288,7 @@ export default function HeaderCom() {
                 </Link>
               </div>
               {/* Log In */}
-              {!token ? (
+              {/* {!token ? (
                 <Link
                   href="/login"
                   className="flex items-center justify-between py-3 border-b border-gray-100"
@@ -271,7 +306,7 @@ export default function HeaderCom() {
                 >
                   <span className="text-lg font-medium">Log Out</span>
                 </button>
-              )}
+              )} */}
               {/* User Profile for mobile */}
               {token && (
                 <div className="flex items-center justify-center gap-3 mt-4 py-2">

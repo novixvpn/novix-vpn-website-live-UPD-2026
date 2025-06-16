@@ -41,17 +41,18 @@ export default function HighSpeedVPNPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/download"
-                  className="inline-flex h-12 items-center justify-center rounded-md bg-primary px-8 text-base font-medium text-white shadow-lg shadow-primary/30 transition-colors hover:bg-primary-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                  className="inline-flex  h-12 items-center justify-center rounded-md bg-primary px-8 text-base font-medium text-white shadow-lg shadow-primary/30 transition-colors hover:bg-primary-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                 >
                   Get Novix VPN
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
-                <Link
+
+                {/* <Link
                   href="/features"
                   className="inline-flex h-12 items-center justify-center rounded-md border border-gray-300 bg-white px-8 text-base font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                 >
                   Learn More
-                </Link>
+                </Link> */}
               </div>
             </div>
             <div className="order-1 lg:order-2">

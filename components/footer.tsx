@@ -181,7 +181,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/#download"
+                  href="/download"
                   className="text-gray-400 hover:text-white"
                 >
                   Download
@@ -264,6 +264,14 @@ export default function Footer() {
                   Cookie Policy
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/how-to-delete-account"
+                  className="text-gray-400 hover:text-white"
+                >
+                  How To Delete My Novix Vpn Account
+                </Link>
+              </li>
             </ul>
           )}
 
@@ -326,10 +334,7 @@ export default function Footer() {
             "Available VPN App",
             <ul className="space-y-4 pb-4">
               <li>
-                <Link
-                  href="/apps/android"
-                  className="text-gray-400 hover:text-white"
-                >
+                <Link href="/" className="text-gray-400 hover:text-white">
                   Android
                 </Link>
               </li>

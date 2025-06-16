@@ -27,11 +27,12 @@ export default function MoneyBackGuarantee() {
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-6">
-                30-Day Money-Back Guarantee
+                48-Hour Money-Back Guarantee
               </h1>
               <p className="text-xl md:text-2xl mb-8">
-                Try Novix VPN risk-free. If you're not completely satisfied,
-                we'll give you a full refund.
+                Try NovixVPN without worrying about commitment. If you’re not
+                happy, just cancel your subscription and ask for a refund within
+                48 hours—directly through the Google Play Store.
               </p>
               <div className="flex items-center justify-center gap-2 mb-8">
                 <Clock className="h-6 w-6" />
@@ -53,7 +54,7 @@ export default function MoneyBackGuarantee() {
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl font-bold text-center mb-12">
-                How Our Money-Back Guarantee Works
+                How It Works
               </h2>
 
               <div className="grid gap-8">
@@ -63,12 +64,13 @@ export default function MoneyBackGuarantee() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">
-                      Try Novix VPN for 30 Days
+                      Subscribe via Google Play
                     </h3>
                     <p className="text-muted-foreground">
-                      Sign up for any Novix VPN plan and use all our premium
-                      features for a full 30 days. Test our speed, security, and
-                      streaming capabilities on all your devices.
+                      Download NovixVPN, pick any plan, and get full access for
+                      48 hours. You’ll have the chance to explore every premium
+                      feature—fast speeds, strong security, and smooth streaming
+                      on all your devices.
                     </p>
                   </div>
                 </div>
@@ -79,12 +81,13 @@ export default function MoneyBackGuarantee() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">
-                      Enjoy Complete Protection
+                      Use Everything, No Limits
                     </h3>
                     <p className="text-muted-foreground">
-                      During your trial period, you'll have full access to all
-                      features, including our high-speed servers, military-grade
-                      encryption, and 24/7 customer support.
+                      This isn't a demo or a cut-down version. You’ll get full
+                      access to all the features our long-term users enjoy,
+                      including high-speed servers, strong encryption, and 24/7
+                      support.
                     </p>
                   </div>
                 </div>
@@ -95,12 +98,12 @@ export default function MoneyBackGuarantee() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">
-                      Not Satisfied? No Problem
+                      Don’t Love It? Cancel and Refund
                     </h3>
                     <p className="text-muted-foreground">
-                      If you're not completely satisfied with Novix VPN for any
-                      reason, simply contact our customer support team within 30
-                      days of your purchase.
+                      If NovixVPN doesn’t feel right for you, request a refund
+                      through your Google Play account within 48 hours. No
+                      awkward conversations. No forms. Just a simple goodbye.
                     </p>
                   </div>
                 </div>
@@ -111,12 +114,12 @@ export default function MoneyBackGuarantee() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">
-                      Get a Full Refund
+                      Important: Cancel Through Google Play
                     </h3>
                     <p className="text-muted-foreground">
-                      We'll process your refund right away, no questions asked.
-                      Your money will be back in your account within 5-10
-                      business days, depending on your payment method.
+                      Uninstalling the app won’t cancel your subscription. To
+                      avoid being charged, make sure you cancel directly in your
+                      Google Play settings.
                     </p>
                   </div>
                 </div>
@@ -131,103 +134,74 @@ export default function MoneyBackGuarantee() {
               <h2 className="text-3xl font-bold text-center mb-12">
                 Frequently Asked Questions
               </h2>
-
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>
-                    How do I request a refund?
+                    How long do I have to request a refund?
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="text-muted-foreground mb-4">
-                      Requesting a refund is simple. You can:
-                    </p>
-                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                      <li>Contact our 24/7 live chat support on our website</li>
-                      <li>Email us at support@novixvpn.com</li>
-                      <li>Submit a request through your account dashboard</li>
-                    </ul>
-                    <p className="text-muted-foreground mt-4">
-                      Our support team will process your refund request
-                      immediately, no questions asked.
+                      You’ve got 48 hours from the time you purchase to request
+                      a refund through Google Play.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-2">
                   <AccordionTrigger>
-                    Are there any conditions to the money-back guarantee?
+                    Can I ask NovixVPN for the refund directly?
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="text-muted-foreground">
-                      Our money-back guarantee is truly no-questions-asked. The
-                      only condition is that you request your refund within 30
-                      days of your initial purchase. This applies to all
-                      subscription plans, including monthly, yearly, and
-                      multi-year plans.
+                      No, refunds are handled by Google Play. We don’t have
+                      control over their decisions or timing.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-3">
                   <AccordionTrigger>
-                    How long does it take to get my refund?
+                    How do I cancel my subscription?
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="text-muted-foreground">
-                      We process all refund requests immediately. However, the
-                      time it takes for the money to appear in your account
-                      depends on your payment method:
+                      Head to your Google Play account, find your subscriptions,
+                      and cancel NovixVPN from there.
                     </p>
-                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground mt-4">
-                      <li>Credit/debit cards: 5-10 business days</li>
-                      <li>PayPal: 1-3 business days</li>
-                      <li>Cryptocurrency: 1-5 business days</li>
-                    </ul>
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-4">
                   <AccordionTrigger>
-                    Can I get a refund if I purchased through the App Store or
-                    Google Play?
+                    What if I miss the 48-hour mark?
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="text-muted-foreground">
-                      For purchases made through the App Store or Google Play,
-                      refunds need to be requested directly through Apple or
-                      Google, as they manage the payment processing. However,
-                      our support team can guide you through the process if
-                      needed.
+                      After 48 hours, refunds aren’t available. Google doesn’t
+                      offer partial refunds for unused days.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-5">
                   <AccordionTrigger>
-                    What happens to my data after I cancel?
+                    Are there any restrictions?
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="text-muted-foreground">
-                      We have a strict no-logs policy, so we don't store any
-                      information about your online activities. When you cancel
-                      your subscription, your account information is deleted
-                      from our systems within 30 days, in accordance with our
-                      privacy policy.
+                      No hidden rules. If it’s within 48 hours and you request
+                      it through Google Play, you’ll get your money back.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-6">
-                  <AccordionTrigger>
-                    Can I try Novix VPN again after getting a refund?
-                  </AccordionTrigger>
+                  <AccordionTrigger>Need a Hand?</AccordionTrigger>
                   <AccordionContent>
                     <p className="text-muted-foreground">
-                      Yes, you're welcome to try Novix VPN again in the future.
-                      However, please note that the money-back guarantee is
-                      available once per customer. If you've previously received
-                      a refund, subsequent subscriptions will not be eligible
-                      for the 30-day money-back guarantee.
+                      Our support team is here 24/7. Whether you're stuck,
+                      confused, or just want to double-check something—we’ve got
+                      you.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
@@ -246,8 +220,9 @@ export default function MoneyBackGuarantee() {
                 Our customer support team is available 24/7 to help you with any
                 questions or concerns.
               </p>
-              <div className="grid gap-6 md:grid-cols-2">
-                <Card>
+              {/* <div className="grid gap-6 md:grid-cols-2"> */}
+              <div className="">
+                {/* <Card>
                   <CardContent className="p-6 flex flex-col items-center text-center">
                     <div className="mb-4 rounded-full bg-primary/10 p-3">
                       <HelpCircle className="h-6 w-6 text-primary" />
@@ -261,7 +236,7 @@ export default function MoneyBackGuarantee() {
                     </p>
                     <Button className="mt-auto">Chat Now</Button>
                   </CardContent>
-                </Card>
+                </Card> */}
 
                 <Card>
                   <CardContent className="p-6 flex flex-col items-center text-center">
@@ -270,11 +245,16 @@ export default function MoneyBackGuarantee() {
                     </div>
                     <h3 className="text-xl font-bold mb-2">Email Support</h3>
                     <p className="text-muted-foreground mb-4">
-                      Send us an email and we'll get back to you within 24
-                      hours.
+                      Shoot us a message. We respond within 24 hours, often much
+                      faster.
                     </p>
                     <Button variant="outline" className="mt-auto">
-                      Email Us
+                      <a
+                        href="mailto:novixvpn@gmail.com"
+                        className="text-primary "
+                      >
+                        Email Us
+                      </a>
                     </Button>
                   </CardContent>
                 </Card>
@@ -287,20 +267,21 @@ export default function MoneyBackGuarantee() {
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">
-                Ready to Try Novix VPN Risk-Free?
+                Give It a Go, No Strings Attached
               </h2>
               <p className="text-xl mb-8">
-                Join millions of satisfied users who trust Novix VPN for their
-                online privacy and security.
+                Join the many users who trust NovixVPN every day. You’ve got 48
+                hours to test it, try it, and decide if it’s right for you. If
+                not, no worries—you’ll get your money back.
               </p>
               <Button
                 size="lg"
                 className="bg-white text-primary hover:bg-white/90"
               >
-                Get Started Today
+                <Link href="/download">Get Started Today</Link>
               </Button>
               <p className="mt-4">
-                30-day money-back guarantee. No questions asked.
+                No pressure. No small print. Just good service.
               </p>
             </div>
           </div>

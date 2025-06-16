@@ -31,10 +31,10 @@ export default function ComparisonTable() {
       name: "Real-Time Speed Test",
       competitors: [true, false, false, false, false],
     },
-    {
-      name: "Easy Setup with Tutorial Video",
-      competitors: [true, false, false, false, false],
-    },
+    // {
+    //   name: "Easy Setup with Tutorial Video",
+    //   competitors: [true, false, false, false, false],
+    // },
     {
       name: "IP Checker",
       competitors: [true, true, true, true, true],

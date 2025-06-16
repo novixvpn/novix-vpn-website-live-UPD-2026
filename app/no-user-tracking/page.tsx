@@ -374,7 +374,7 @@ export default function NoUserTracking() {
                 </Button>
               </Link>
               <p className="mt-4 text-sm text-muted-foreground">
-                30-day money-back guarantee. No questions asked.
+                48-hours money-back guarantee. No questions asked.
               </p>
             </div>
           </div>

@@ -125,11 +125,11 @@ export default function WhyNovixVPN() {
                     </span>
                   </div>
                   <h3 className="text-xl font-bold mb-2">
-                    30-Day Money-Back Guarantee
+                    48 Hours Money-Back Guarantee
                   </h3>
                   <p className="text-muted-foreground">
                     Try Novix on your own terms. Not a good fit? You can get
-                    your money back in full if you cancel within 30 days. No
+                    your money back in full if you cancel within 48 hours. No
                     problems, no fine print.
                   </p>
                 </CardContent>

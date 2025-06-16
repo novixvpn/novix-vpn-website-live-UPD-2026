@@ -14,25 +14,26 @@ export default function VPNServers() {
         <section className="bg-gradient-to-b from-primary to-primary/80 text-white py-16 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-6">
-                Global VPN Server Network
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl mb-6">
+                Network of Global VPN Servers
               </h1>
-              <p className="text-xl md:text-2xl mb-8">
-                Access the internet securely from anywhere with our extensive
-                network of high-speed servers.
+              <p className="text-sm mb-8">
+                Very rapid speeds. Browsing without borders. Security at the
+                bank level.
+              </p>
+              <p className="text-sm mb-8">
+                Our VPN network covers four continents and has top-of-the-line
+                infrastructure that does more than just speed. You can always
+                have smart, safe, and easy access to the internet. We have your
+                back whether you're watching your favourite shows, keeping your
+                data safe, or avoiding censorship.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <div className="flex items-center gap-2">
-                  <Server className="h-5 w-5" />
-                  <span className="text-lg font-bold">3,000+ Servers</span>
-                </div>
-                <div className="flex items-center gap-2">
                   <Globe className="h-5 w-5" />
-                  <span className="text-lg font-bold">90+ Countries</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Check className="h-5 w-5" />
-                  <span className="text-lg font-bold">Unlimited Bandwidth</span>
+                  <span className="text-lg font-bold">
+                    Servers available worldwide for unrestricted global access.
+                  </span>
                 </div>
               </div>
             </div>
@@ -42,267 +43,387 @@ export default function VPNServers() {
         <section className="py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto mb-12">
-              <div className="flex flex-col md:flex-row gap-4 items-center">
-                <div className="relative w-full">
-                  <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-                  <Input
-                    type="search"
-                    placeholder="Search for a country or city..."
-                    className="pl-10"
-                  />
+              <h2 className="text-3xl font-bold tracking-tighter mb-6 text-center">
+                Server Locations That Are Good for Business and Fun
+              </h2>
+            </div>
+
+            <div className="space-y-12">
+              {/* Asia and the Pacific */}
+              <div>
+                <h3 className="text-2xl font-bold mb-6">
+                  Asia and the Pacific
+                </h3>
+                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
+                          <Image
+                            src="https://flagsapi.com/ID/flat/64.png"
+                            alt="Indonesia Flag"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">
+                            Jakarta, Indonesia
+                          </h3>
+                          <p className="text-sm text-muted-foreground">
+                            The best way to get to Southeast Asia.
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm">
+                        All in one: smooth streaming and powerful local access.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
+                          <Image
+                            src="https://flagsapi.com/JP/flat/64.png"
+                            alt="Japan Flag"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">Tokyo, Japan</h3>
+                          <p className="text-sm text-muted-foreground">
+                            Use Japan's world-class internet backbone.
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm">
+                        Great for gaming, broadcasting, and staying one step
+                        ahead.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
+                          <Image
+                            src="https://flagsapi.com/AU/flat/64.png"
+                            alt="Australia Flag"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">
+                            Sydney, Australia
+                          </h3>
+                          <p className="text-sm text-muted-foreground">
+                            Fast connectivity across the Pacific.
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm">
+                        Complete access to regional content around the Pacific.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
+                          <Image
+                            src="https://flagsapi.com/HK/flat/64.png"
+                            alt="Hong Kong Flag"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">
+                            Hong Kong, China
+                          </h3>
+                          <p className="text-sm text-muted-foreground">
+                            Major digital link to continental Asia.
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm">No limits. No compromises.</p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
+                          <Image
+                            src="https://flagsapi.com/SG/flat/64.png"
+                            alt="Singapore Flag"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">
+                            Singapore (2 Servers)
+                          </h3>
+                          <p className="text-sm text-muted-foreground">
+                            IT capital of the region.
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm">
+                        Amazing speeds and connections that never break.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
+                          <Image
+                            src="https://flagsapi.com/IN/flat/64.png"
+                            alt="India Flag"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">Delhi, India</h3>
+                          <p className="text-sm text-muted-foreground">
+                            Connect to India's digital realm.
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm">
+                        Routes optimized for speed and stability.
+                      </p>
+                    </CardContent>
+                  </Card>
                 </div>
-                <Button className="whitespace-nowrap">Find Servers</Button>
+              </div>
+
+              {/* The Americas */}
+              <div>
+                <h3 className="text-2xl font-bold mb-6">The Americas</h3>
+                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
+                          <Image
+                            src="https://flagsapi.com/BR/flat/64.png"
+                            alt="Brazil Flag"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">
+                            São Paulo, Brazil
+                          </h3>
+                          <p className="text-sm text-muted-foreground">
+                            Digital engine room of South America.
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm">
+                        Quick, safe, and ready for use throughout Latin America.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
+                          <Image
+                            src="https://flagsapi.com/CA/flat/64.png"
+                            alt="Canada Flag"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">Toronto, Canada</h3>
+                          <p className="text-sm text-muted-foreground">
+                            Unrestricted high-speed route.
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm">
+                        Access one of North America's best IT clusters.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
+                          <Image
+                            src="https://flagsapi.com/US/flat/64.png"
+                            alt="USA Flag"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">Iowa, USA</h3>
+                          <p className="text-sm text-muted-foreground">
+                            Central US for even coverage.
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm">
+                        Great for gaming, streaming, and more.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
+                          <Image
+                            src="https://flagsapi.com/US/flat/64.png"
+                            alt="USA Flag"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">
+                            Los Angeles, USA (2 Servers)
+                          </h3>
+                          <p className="text-sm text-muted-foreground">
+                            West Coast connectivity.
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm">
+                        Greater load handling and constant content access.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+
+              {/* Europe and the Middle East */}
+              <div>
+                <h3 className="text-2xl font-bold mb-6">
+                  Europe and the Middle East
+                </h3>
+                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
+                          <Image
+                            src="https://flagsapi.com/DE/flat/64.png"
+                            alt="Germany Flag"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">Berlin, Germany</h3>
+                          <p className="text-sm text-muted-foreground">
+                            EU's IT capital with privacy-first connections.
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm">Fast, safe, and dependable.</p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
+                          <Image
+                            src="https://flagsapi.com/GB/flat/64.png"
+                            alt="UK Flag"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">London, England</h3>
+                          <p className="text-sm text-muted-foreground">
+                            Fastest way to British content.
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm">Easy access throughout Europe.</p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
+                          <Image
+                            src="https://flagsapi.com/FR/flat/64.png"
+                            alt="France Flag"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">Paris, France</h3>
+                          <p className="text-sm text-muted-foreground">
+                            Centre of Europe connectivity.
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm">
+                        Quick and easy access to French and EU material.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
+                          <Image
+                            src="https://flagsapi.com/QA/flat/64.png"
+                            alt="Qatar Flag"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">
+                            Doha, Qatar (2 Servers)
+                          </h3>
+                          <p className="text-sm text-muted-foreground">
+                            Key point in the Middle East.
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm">
+                        Fast in the region and connects to the rest of the
+                        world.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
               </div>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
-                      <Image
-                        src="/placeholder.svg?height=40&width=40"
-                        alt="USA Flag"
-                        width={40}
-                        height={40}
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold">United States</h3>
-                      <p className="text-sm text-muted-foreground">
-                        500+ servers
-                      </p>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex justify-between text-sm">
-                      <span>New York</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Los Angeles</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Chicago</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Miami</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Seattle</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
-                      <Image
-                        src="/placeholder.svg?height=40&width=40"
-                        alt="UK Flag"
-                        width={40}
-                        height={40}
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold">United Kingdom</h3>
-                      <p className="text-sm text-muted-foreground">
-                        200+ servers
-                      </p>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex justify-between text-sm">
-                      <span>London</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Manchester</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Glasgow</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Birmingham</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
-                      <Image
-                        src="/placeholder.svg?height=40&width=40"
-                        alt="Germany Flag"
-                        width={40}
-                        height={40}
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold">Germany</h3>
-                      <p className="text-sm text-muted-foreground">
-                        150+ servers
-                      </p>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex justify-between text-sm">
-                      <span>Berlin</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Frankfurt</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Munich</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Hamburg</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
-                      <Image
-                        src="/placeholder.svg?height=40&width=40"
-                        alt="Japan Flag"
-                        width={40}
-                        height={40}
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold">Japan</h3>
-                      <p className="text-sm text-muted-foreground">
-                        100+ servers
-                      </p>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex justify-between text-sm">
-                      <span>Tokyo</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Osaka</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Yokohama</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
-                      <Image
-                        src="/placeholder.svg?height=40&width=40"
-                        alt="Australia Flag"
-                        width={40}
-                        height={40}
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold">Australia</h3>
-                      <p className="text-sm text-muted-foreground">
-                        80+ servers
-                      </p>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex justify-between text-sm">
-                      <span>Sydney</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Melbourne</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Brisbane</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Perth</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
-                      <Image
-                        src="/placeholder.svg?height=40&width=40"
-                        alt="Canada Flag"
-                        width={40}
-                        height={40}
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold">Canada</h3>
-                      <p className="text-sm text-muted-foreground">
-                        120+ servers
-                      </p>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex justify-between text-sm">
-                      <span>Toronto</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Vancouver</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Montreal</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span>Calgary</span>
-                      <span className="text-green-500">Optimal</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
             <div className="mt-8 text-center">
-              <Button variant="outline" className="mr-2">
-                View More Countries
-              </Button>
               <Button className="bg-primary hover:bg-primary/90">
-                Get Novix VPN
+                <Link href="/download">Get Novix VPN</Link>
               </Button>
             </div>
           </div>
@@ -310,62 +431,86 @@ export default function VPNServers() {
 
         <section className="bg-muted py-12 md:py-24">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-12 md:grid-cols-2 items-center">
-              <div className="md:-mt-10">
-                <h2 className="text-3xl font-bold mb-6">Server Features</h2>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
+            <div className="max-w-3xl mx-auto text-center mb-12">
+              <h2 className="text-3xl font-bold tracking-tighter mb-6">
+                Why Our Global Network Works Smarter
+              </h2>
+            </div>
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              <Card>
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-3 mb-4">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium">Optimized for Speed</h4>
-                      <p className="text-muted-foreground">
-                        Our servers are optimized for maximum speed and minimal
-                        latency, ensuring a smooth browsing experience.
+                      <h4 className="font-medium">Peak Performance</h4>
+                      <p className="text-sm text-muted-foreground">
+                        We carefully choose each server location to make sure
+                        that speeds are fast, latency is minimal, and uptime is
+                        high.
                       </p>
                     </div>
-                  </li>
-                  <li className="flex items-start gap-3">
+                  </div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-3 mb-4">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium">P2P Support</h4>
-                      <p className="text-muted-foreground">
-                        Many of our servers support P2P file sharing, making
-                        them ideal for torrenting and other peer-to-peer
-                        activities.
+                      <h4 className="font-medium">More Reach</h4>
+                      <p className="text-sm text-muted-foreground">
+                        You can always connect to a server nearby because there
+                        are 14 of them on four continents.
                       </p>
                     </div>
-                  </li>
-                  <li className="flex items-start gap-3">
+                  </div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-3 mb-4">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium">Obfuscated Servers</h4>
-                      <p className="text-muted-foreground">
-                        Special servers designed to bypass network restrictions
-                        in countries with internet censorship.
+                      <h4 className="font-medium">Privacy Comes Standard</h4>
+                      <p className="text-sm text-muted-foreground">
+                        Choose servers in places where the regulations of data
+                        protection are strong to keep your information
+                        protected.
                       </p>
                     </div>
-                  </li>
-                  <li className="flex items-start gap-3">
+                  </div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-3 mb-4">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium">Double VPN</h4>
-                      <p className="text-muted-foreground">
-                        Route your traffic through two different VPN servers for
-                        an extra layer of security.
+                      <h4 className="font-medium">
+                        Access to Content Around the World
+                      </h4>
+                      <p className="text-sm text-muted-foreground">
+                        Get around restrictions and get to the stuff you desire,
+                        no matter where it is.
                       </p>
                     </div>
-                  </li>
-                </ul>
-              </div>
-              <div className="relative rounded-lg overflow-hidden">
-                <Image
-                  src="/server-features.png"
-                  alt="Server Network Map"
-                  width={600}
-                  height={400}
-                  className="object-cover w-full h-full"
-                />
-              </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-3 mb-4">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-medium">Redundancy Built In</h4>
+                      <p className="text-sm text-muted-foreground">
+                        In busy places like Los Angeles, multiple servers keep
+                        your connection consistent, even when demand goes up.
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
@@ -374,22 +519,28 @@ export default function VPNServers() {
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">
-                Ready to Connect?
+                Just One Click. Four Continents. Full Access.
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                Get access to our global network of high-speed servers with
-                Novix VPN.
+                Our VPN gives you the connectivity you need and the protection
+                you need, no matter where you are or what you're trying to do.
               </p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Get Started Today
+
+              <Button
+                size="lg"
+                variant="outline"
+                className="bg-primary text-white hover:bg-primary/90"
+              >
+                <Link href="/download">Get Started Today</Link>
               </Button>
               <p className="mt-4 text-sm text-muted-foreground">
-                30-day money-back guarantee. No questions asked.
+                48-hours money-back guarantee. No questions asked.
               </p>
             </div>
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }
