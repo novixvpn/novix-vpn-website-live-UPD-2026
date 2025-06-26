@@ -14,9 +14,9 @@ export default function Home() {
         <section id="pricing" className="bg-muted/50 py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Simple, Transparent Pricing
-              </h2>
+              </h1>
               <p className="mt-4 max-w-[700px] text-muted-foreground md:text-xl">
                 Choose the plan that works for you
               </p>

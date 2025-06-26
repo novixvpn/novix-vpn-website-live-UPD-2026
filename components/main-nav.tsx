@@ -10,6 +10,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import LanguageDropdown from "./language/LanguageDropdown";
 
 export default function MainNav() {
   return (
@@ -160,6 +161,13 @@ export default function MainNav() {
               Contact
             </NavigationMenuLink>
           </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuLink
+            className={`bg-transparent ${navigationMenuTriggerStyle()}`}
+          >
+            <LanguageDropdown />
+          </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

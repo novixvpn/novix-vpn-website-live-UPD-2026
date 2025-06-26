@@ -40,8 +40,8 @@ export default function HighSpeedVPNPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/download"
-                  className="inline-flex  h-12 items-center justify-center rounded-md bg-primary px-8 text-base font-medium text-white shadow-lg shadow-primary/30 transition-colors hover:bg-primary-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                  href="https://play.google.com/store/apps/details?id=com.novix.mobile"
+                  className="inline-flex  h-12 items-center justify-center rounded-md bg-primary px-8 text-base font-medium text-white shadow-lg shadow-primary/30 transition-colors hover:bg-primary-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary relative z-10"
                 >
                   Get Novix VPN
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -404,7 +404,7 @@ export default function HighSpeedVPNPage() {
               fast privacy might change things.
             </p>
             <Link
-              href="/download"
+              href="https://play.google.com/store/apps/details?id=com.novix.mobile"
               className="inline-flex h-14 items-center justify-center rounded-md bg-primary px-10 text-lg font-medium text-white shadow-lg transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
             >
               Get Novix VPN Now

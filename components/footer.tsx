@@ -13,6 +13,7 @@ import {
   ChevronUp,
 } from "lucide-react";
 import { FaTiktok, FaThreads } from "react-icons/fa6";
+import LanguageDropdown from "./language/LanguageDropdown";
 
 export default function Footer() {
   // State for expandable sections
@@ -146,7 +147,7 @@ export default function Footer() {
 
           {/* App store link commented out */}
           <Link
-            href="https://play.google.com/store"
+            href="https://play.google.com/store/apps/details?id=com.novix.mobile"
             className="w-full max-w-[200px]"
           >
             <Image
@@ -334,7 +335,10 @@ export default function Footer() {
             "Available VPN App",
             <ul className="space-y-4 pb-4">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-white">
+                <Link
+                  href="https://play.google.com/store/apps/details?id=com.novix.mobile"
+                  className="text-gray-400 hover:text-white"
+                >
                   Android
                 </Link>
               </li>
@@ -345,8 +349,10 @@ export default function Footer() {
         {/* Mobile-only divider and language selector */}
         {isMobile && (
           <>
-            <div className="h-px bg-gray-700 my-6"></div>
-            <div className="flex items-center gap-2 py-3">
+            {/* <div className="h-px text-white my-6">
+              <LanguageDropdown />
+            </div> */}
+            {/* <div className="flex items-center gap-2 py-3">
               <div className="p-2 rounded-full border border-gray-600">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -367,7 +373,7 @@ export default function Footer() {
               </div>
               <span className="text-white text-lg">English</span>
               <ChevronDown size={20} className="text-white" />
-            </div>
+            </div> */}
           </>
         )}
 

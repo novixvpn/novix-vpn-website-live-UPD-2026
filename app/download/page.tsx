@@ -49,13 +49,13 @@ export default function VPNDownloadPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Link
-                href="#"
+                href="https://play.google.com/store/apps/details?id=com.novix.mobile"
                 className="bg-primary text-white font-medium hover:bg-transparent hover:text-black  py-3 px-6 rounded-full text-center border border-gray-300 hover:border transition-colors ease-in-out "
               >
                 Buy NovixVPN
               </Link>
               <Link
-                href="#"
+                href="https://play.google.com/store/apps/details?id=com.novix.mobile"
                 className="border border-gray-300 hover:bg-primary text-gray-700 hover:text-white font-medium py-3 px-6 rounded-full text-center transition-colors ease-in-out "
               >
                 Get from Google Play
@@ -70,7 +70,7 @@ export default function VPNDownloadPage() {
 
           <div className="flex justify-center">
             <Image
-              src="/download-page.webp"
+              src="/Download page.png"
               alt="QR Code"
               width={550}
               height={500}

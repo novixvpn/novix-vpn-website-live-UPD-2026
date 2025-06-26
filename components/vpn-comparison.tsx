@@ -35,7 +35,7 @@ export default function VpnComparison() {
 
         <div className="mt-12 flex justify-center">
           <Link
-            href="/download"
+            href="https://play.google.com/store/apps/details?id=com.novix.mobile"
             className="inline-flex h-12 items-center justify-center rounded-md bg-primary px-8 text-base font-medium text-white shadow transition-colors hover:bg-primary-600 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary"
           >
             Get NovixVPN

@@ -33,7 +33,7 @@ export default function PricingCards({}: PricingCardsProps) {
     {
       name: "Yearly Plan",
       originalPrice: "$160.00",
-      price: "$48.00 / year",
+      price: "$47.99 / year",
       monthlyEquivalent: "~$4.00/month",
       description: "Complete protection for your digital life. Save 70%",
       features: [
@@ -42,7 +42,7 @@ export default function PricingCards({}: PricingCardsProps) {
         "Free Kill Switch",
         "24/7 customer support",
         "Ad & Malware Blocker",
-        // "3-Day-Claim Extra Bonus",
+        "Includes Extra bonus:  3-days",
         "48-hour money-back guarantee",
       ],
       popular: true,
@@ -123,7 +123,7 @@ export default function PricingCards({}: PricingCardsProps) {
             </ul>
           </CardContent>
           <CardFooter>
-            <Link href="/">
+            <Link href="https://play.google.com/store/apps/details?id=com.novix.mobile">
               <Button className={`w-full ${plan.popular ? "bg-primary" : ""}`}>
                 Get {plan.name}
               </Button>

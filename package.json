@@ -67,6 +67,7 @@
   },
   "devDependencies": {
     "@types/js-cookie": "^3.0.6",
+    "@types/ladjs__country-language": "^1.0.0",
     "@types/node": "^22",
     "@types/nodemailer": "^6.4.17",
     "@types/react": "^19",

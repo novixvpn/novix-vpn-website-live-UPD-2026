@@ -36,35 +36,35 @@ export default function FAQComponent() {
       ),
       icon: "",
     },
-    // {
-    //   question: "Is Novix VPN free?",
-    //   answer: (
-    //     <div className="space-y-4">
-    //       <p>
-    //         Yes, Novix VPN offers both free and premium access , so you can
-    //         enjoy secure browsing no matter your budget.
-    //       </p>
-    //       <p>
-    //         With the Extra Free plan, you get access to select VPN servers and
-    //         essential privacy features—perfect for basic protection and
-    //         anonymous browsing.
-    //       </p>
-    //       <p>
-    //         However, if you're looking for faster speeds, more server locations,
-    //         and advanced features like the kill switch, server performance
-    //         stats, and priority support, Novix VPN’s premium plans (available
-    //         weekly, monthly, or yearly) are designed to deliver the full
-    //         experience.
-    //       </p>
-    //       <p className="font-medium">
-    //         <strong>Bonus:</strong> We also offer a Try Extra Free for 3 Days
-    //         for yearly plans, so you can explore premium features risk-free
-    //         before committing.
-    //       </p>
-    //     </div>
-    //   ),
-    //   icon: "",
-    // },
+    {
+      question: "Is Novix VPN free?",
+      answer: (
+        <div className="space-y-4">
+          <p>
+            Yes, Novix VPN offers both free and premium access , so you can
+            enjoy secure browsing no matter your budget.
+          </p>
+          <p>
+            With the Extra Free plan, you get access to select VPN servers and
+            essential privacy features—perfect for basic protection and
+            anonymous browsing.
+          </p>
+          <p>
+            However, if you're looking for faster speeds, more server locations,
+            and advanced features like the kill switch, server performance
+            stats, and priority support, Novix VPN’s premium plans (available
+            weekly, monthly, or yearly) are designed to deliver the full
+            experience.
+          </p>
+          <p className="font-medium">
+            <strong>Bonus:</strong> We also offer a Try Extra Free for 3 Days
+            for yearly plans, so you can explore premium features risk-free
+            before committing.
+          </p>
+        </div>
+      ),
+      icon: "",
+    },
     {
       question: "How secure is Novix VPN?",
       answer: (

@@ -357,9 +357,11 @@ export default function Features() {
                 Join millions of users who trust Novix VPN for their online
                 privacy and security.
               </p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Get Started Today
-              </Button>
+              <Link href="https://play.google.com/store/apps/details?id=com.novix.mobile">
+                <Button size="lg" className="bg-primary hover:bg-primary/90">
+                  Get Started Today
+                </Button>
+              </Link>
               <p className="mt-4 text-sm text-muted-foreground">
                 48-hours money-back guarantee. No questions asked.
               </p>

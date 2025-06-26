@@ -40,12 +40,14 @@ export default function MoneyBackGuarantee() {
                   No questions asked. No hidden terms.
                 </span>
               </div>
-              <Button
-                size="lg"
-                className="bg-white text-primary hover:bg-white/90"
-              >
-                Try Novix VPN Risk-Free
-              </Button>
+              <Link href="https://play.google.com/store/apps/details?id=com.novix.mobile">
+                <Button
+                  size="lg"
+                  className="bg-white text-primary hover:bg-white/90"
+                >
+                  Try Novix VPN Risk-Free
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -278,7 +280,9 @@ export default function MoneyBackGuarantee() {
                 size="lg"
                 className="bg-white text-primary hover:bg-white/90"
               >
-                <Link href="/download">Get Started Today</Link>
+                <Link href="https://play.google.com/store/apps/details?id=com.novix.mobile">
+                  Get Started Today
+                </Link>
               </Button>
               <p className="mt-4">
                 No pressure. No small print. Just good service.

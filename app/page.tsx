@@ -78,12 +78,14 @@ export default function Home() {
                   </Link>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button
-                    size="lg"
-                    className="bg-primary rounded-full hover:bg-primary/90"
-                  >
-                    Claim Extra Bonus →
-                  </Button>
+                  <Link href="https://play.google.com/store/apps/details?id=com.novix.mobile">
+                    <Button
+                      size="lg"
+                      className="bg-primary rounded-full hover:bg-primary/90"
+                    >
+                      Claim 70% OFF →
+                    </Button>
+                  </Link>
                   <Link href="#pricing">
                     <Button
                       size="lg"
@@ -123,7 +125,7 @@ export default function Home() {
                 {/* download links */}
                 <div className="w-full flex mt-5">
                   <Link
-                    href="https://play.google.com/store"
+                    href="https://play.google.com/store/apps/details?id=com.novix.mobile"
                     className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
                   >
                     <Image
@@ -341,7 +343,7 @@ export default function Home() {
                 </div>
               </div>
               <Link
-                href="https://play.google.com/store"
+                href="https://play.google.com/store/apps/details?id=com.novix.mobile"
                 className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
               >
                 <Image

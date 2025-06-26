@@ -114,6 +114,17 @@ export default function PrivacyPolicy() {
                     </li>
                     <li> Device Information</li>
                   </ul>
+                  <p>
+                    Additionally, we use{" "}
+                    <span className="font-bold">Google Tag Manager</span> and{" "}
+                    <span className="font-bold">Google Analytics</span> on our
+                    website to better understand how visitors interact with our
+                    content and to improve website performance. These tools do
+                    not collect or store personal or VPN usage data, and IP
+                    anonymization is enabled. The data gathered is purely for
+                    aggregate website analytics and is never linked to your VPN
+                    activity or account.
+                  </p>
                 </section>
               </li>
               <li>
@@ -150,11 +161,21 @@ export default function PrivacyPolicy() {
                   Sharing of Information
                 </h3>
                 <p>
-                  Your privacy is our priority—Novix VPN does not trade, rent,
+                  {/* Your privacy is our priority—Novix VPN does not trade, rent,
                   or sell your information to outside parties for profit. Any
                   information shared with third parties (such as payment
                   processors) is strictly for the purpose of providing Novix
-                  Premium service
+                  Premium service. */}
+                  Your privacy is our priority—Novix VPN does not trade, rent,
+                  or sell your information to outside parties for profit. Any
+                  information shared with third parties (such as payment
+                  processors and customer service tools like{" "}
+                  <span className="font-bold">HubSpot</span>) is strictly for
+                  the purpose of providing Novix Premium service. Our website
+                  uses <span className="font-bold">Google Translate</span> to
+                  offer seamless language translation for a better user
+                  experience. This feature helps ensure accessibility for users
+                  worldwide.
                 </p>
               </li>
               <li>

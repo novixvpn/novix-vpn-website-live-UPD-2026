@@ -22,7 +22,7 @@ export default function VPNPromoBanner() {
             Try Novix VPN risk-free with our 48-hours money-back guarantee.
           </p>
           <Link
-            href="/download"
+            href="https://play.google.com/store/apps/details?id=com.novix.mobile"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-full"
           >
             Get NovixVPN

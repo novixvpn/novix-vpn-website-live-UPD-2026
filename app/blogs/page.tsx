@@ -62,13 +62,13 @@ export default async function BlogPage() {
                 {featuredArticle.category}
               </span>
             </div>
-            <h2 className="mb-4 text-3xl font-bold leading-tight text-gray-800 md:text-4xl">
+            <h1 className="mb-4 text-3xl font-bold leading-tight text-gray-800 md:text-4xl">
               {/* <Link */}
               {/* href={`/blogs/${featuredArticle.id}`}
                 className="transition-colors hover:text-blue-600"> */}
               {featuredArticle.title}
               {/* </Link> */}
-            </h2>
+            </h1>
             <p className="mb-6 text-gray-600 leading-relaxed">
               {featuredArticle.excerpt}
             </p>

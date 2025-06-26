@@ -368,7 +368,7 @@ export default function NoUserTracking() {
               <p className="text-xl text-muted-foreground mb-8">
                 Experience the internet with complete privacy and freedom.
               </p>
-              <Link href={"/download"} className="nav-link">
+              <Link href="https://play.google.com/store/apps/details?id=com.novix.mobile" className="nav-link">
                 <Button size="lg" className="bg-primary hover:bg-primary/90">
                   Get Novix VPN
                 </Button>

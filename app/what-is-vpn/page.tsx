@@ -262,9 +262,11 @@ export default function WhatIsVPN() {
                 </div>
               </div>
 
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Try Novix VPN Risk-Free
-              </Button>
+              <Link href="https://play.google.com/store/apps/details?id=com.novix.mobile">
+                <Button size="lg" className="bg-primary hover:bg-primary/90">
+                  Try Novix VPN Risk-Free
+                </Button>
+              </Link>
               <p className="mt-4 text-sm text-muted-foreground">
                 48-hours money-back guarantee. No questions asked.
               </p>

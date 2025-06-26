@@ -19,12 +19,14 @@ export default function WhyNovixVPN() {
               <p className="text-xl md:text-2xl mb-8">
                 Security that’s silent. Speed that speaks for itself.
               </p>
-              <Button
-                size="lg"
-                className="bg-white text-primary hover:bg-white/90"
-              >
-                Get Novix VPN
-              </Button>
+              <Link href="https://play.google.com/store/apps/details?id=com.novix.mobile">
+                <Button
+                  size="lg"
+                  className="bg-white text-primary hover:bg-white/90"
+                >
+                  Get Novix VPN
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
