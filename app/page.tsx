@@ -1,6 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Shield, Zap, Check, Download, Star, Clock } from "lucide-react";
+import {
+  Shield,
+  Zap,
+  Check,
+  Download,
+  Star,
+  Clock,
+  DollarSign,
+} from "lucide-react";
 import { FaAndroid } from "react-icons/fa6";
 
 import { Button } from "@/components/ui/button";
@@ -83,7 +91,7 @@ export default function Home() {
                       size="lg"
                       className="bg-primary rounded-full hover:bg-primary/90"
                     >
-                      Claim 70% OFF →
+                      3-Day Claim Extra + 70% OFF
                     </Button>
                   </Link>
                   <Link href="#pricing">
@@ -104,7 +112,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="flex items-start md:items-center  gap-1 text-sm text-muted-foreground">
-                  <Clock className="h-5 w-5 text-primary" />
+                  <DollarSign className="h-6 w-6 font-bold text-white bg-green-500 rounded-full p-1" />
                   <span>48-hours Money Back Guarantee</span>
                 </div>
                 {/* <div className="flex items-center gap-4">

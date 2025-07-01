@@ -39,7 +39,7 @@ export default function HeroPromotionCom() {
           <h2 className="text-lg ">
             <strong>Limited-Time Offer:</strong> Save <strong>70% off</strong>
           </h2>
-          <h3 className="font-bold"> + Claim VIP Days</h3>
+          <h3 className="font-bold"> + Includes 3-Day Claim Extra</h3>
         </div>
       </div>
     </>

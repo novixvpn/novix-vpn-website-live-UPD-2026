@@ -347,12 +347,12 @@ export default function Footer() {
         </div>
 
         {/* Mobile-only divider and language selector */}
-        {isMobile && (
+        {/* {isMobile && (
           <>
-            {/* <div className="h-px text-white my-6">
+            <div className="h-px text-white my-6">
               <LanguageDropdown />
-            </div> */}
-            {/* <div className="flex items-center gap-2 py-3">
+            </div>
+            <div className="flex items-center gap-2 py-3">
               <div className="p-2 rounded-full border border-gray-600">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -373,9 +373,11 @@ export default function Footer() {
               </div>
               <span className="text-white text-lg">English</span>
               <ChevronDown size={20} className="text-white" />
-            </div> */}
+            </div>
           </>
-        )}
+        )} */}
+
+        {/* <LanguageDropdown /> */}
 
         {/* Copyright */}
         <div className="mt-6 pt-4 text-gray-400 text-sm text-center">
