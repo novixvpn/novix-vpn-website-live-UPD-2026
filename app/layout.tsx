@@ -8,6 +8,7 @@ import { AuthProvider } from "@/Context/AuthContext";
 import HeaderCom from "@/components/HeaderCom";
 import IpBanner from "@/components/ip-banner";
 import Footer from "@/components/footer";
+import HubspotLoader from "@/components/shared/HubspotLoader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -101,11 +102,13 @@ export default function RootLayout({
         />
 
         {/* HubSpot Embed Code */}
-        <Script
+        <HubspotLoader />
+
+        {/* <Script
           id="hubspot-script"
           strategy="afterInteractive"
           src="//js-na2.hs-scripts.com/242560734.js"
-        />
+        /> */}
 
         <PixelTracker />
         <AuthProvider>

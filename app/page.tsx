@@ -91,7 +91,7 @@ export default function Home() {
                       size="lg"
                       className="bg-primary rounded-full hover:bg-primary/90"
                     >
-                      3-Day Claim Extra + 70% OFF
+                      Start Free Trial + Save 70%
                     </Button>
                   </Link>
                   <Link href="#pricing">
@@ -113,7 +113,9 @@ export default function Home() {
                 </div>
                 <div className="flex items-start md:items-center  gap-1 text-sm text-muted-foreground">
                   <DollarSign className="h-6 w-6 font-bold text-white bg-green-500 rounded-full p-1" />
-                  <span>48-hours Money Back Guarantee</span>
+                  <span className="font-bold text-black">
+                    Risk-free purchase: 48-hour refund, Google-backed.
+                  </span>
                 </div>
                 {/* <div className="flex items-center gap-4">
                   <div className="flex">

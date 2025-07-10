@@ -15,7 +15,7 @@ import LanguageDropdown from "./language/LanguageDropdown";
 export default function MainNav() {
   return (
     <NavigationMenu>
-      <NavigationMenuList className="flex flex-col md:flex-row gap-2">
+      <NavigationMenuList className="flex flex-col md:flex-row ">
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent">
             About
@@ -159,6 +159,15 @@ export default function MainNav() {
               className={`bg-transparent ${navigationMenuTriggerStyle()}`}
             >
               Contact
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/pricing" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={`bg-transparent ${navigationMenuTriggerStyle()}`}
+            >
+              Free VPN
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
